@@ -12,7 +12,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { siteConfig } from "@/site.config";
 
 import Balancer from "react-wrap-balancer";
-import Logo from "@/public/logo.svg";
+import Logo from "@/public/logo.webp";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -24,9 +24,9 @@ const font = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "WordPress & Next.js Starter by 9d8",
+  title: "WordPress & Next.js by Naveed",
   description:
-    "A starter template for Next.js with WordPress as a headless CMS.",
+    "A Next.js app with WordPress as a headless CMS for SPM.",
   metadataBase: new URL(siteConfig.site_domain),
   alternates: {
     canonical: "/",
@@ -93,9 +93,7 @@ const Nav = ({ className, children, id }: NavProps) => {
               </Button>
             ))}
           </div>
-          <Button asChild className="hidden sm:flex">
-            <Link href="https://github.com/9d8dev/next-wp">Get Started</Link>
-          </Button>
+          
           <MobileNav />
         </div>
       </div>
